@@ -1,0 +1,201 @@
+*, *::after,*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #000000;
+}
+
+form *{
+    font-family: "Poppins" sans-serif;
+    color: #ffffff;
+    letter-spacing: 0.6px;
+    outline: none;
+    border: none;
+}
+
+form{
+    background-color: rgba(255,255,255,0.13);
+    height: 500px;
+    width: 400px;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 2px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 35px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+    border-radius: 10px;
+}
+
+form h3{
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: center;
+}
+
+label{
+    display: block;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+input{
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: rgba(255,255,255,0.07);
+    border-radius: 3px;
+    padding: 0 10px;
+    margin-top: 8px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+::placeholder{
+    color: rgb(216, 219, 221);
+}
+
+button {
+    margin-top: 50px;
+    width: 100%;
+    color: #000000;
+    background-color: #ffffff;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+button:hover{
+    background: linear-gradient(to right , #2f649c , #c7911e);
+}
+
+.social{
+    margin-top: 30px;
+    display: flex;
+}
+
+.social div{
+    background: red;
+    width: 150px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255, 0.27);
+    color: #ffffff;
+    text-align: center;
+    padding: 5px 10px 10px 5px;
+}
+
+.social div:hover{
+    background-color: rgba(255,255,255, 0.47);
+}
+
+.social .facebook{
+    margin-left: 25px;
+}
+
+
+.social i {
+    margin-right: 10px;
+}
+
+.social .google:hover{
+    background: linear-gradient(to left, #204bb8, #6f9fc0);
+    cursor: pointer;
+
+}
+
+.social .facebook:hover{
+    background: linear-gradient( to right, #c7911e, #c7541e);
+    cursor: pointer;
+}
+
+.bg{
+    width: 430px;
+    height: 480px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+}
+
+.bg .shape{
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.shape:first-child{
+    background: linear-gradient( #204bb8, #7eb0e5);
+    left: -80px; top: -80px;
+    filter: blur(10px);
+}
+.shape:last-child{
+    background: linear-gradient( #d08b31, #af7113);
+    right: -30px; bottom: -80px;
+    filter: blur(10px);
+}
+
+
+
+/* -- YouTube Link Styles -- */
+
+#source-link {
+    top: 60px;
+  }
+  
+  #source-link > i {
+    color: rgb(94, 106, 210);
+  }
+  
+  #yt-link {  
+    top: 10px;
+  }
+  
+  #yt-link > i {
+    color: rgb(219, 31, 106); 
+  
+  }
+  
+  .meta-link {
+    align-items: center;
+    backdrop-filter: blur(3px);
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+    cursor: pointer;  
+    display: inline-flex;
+    gap: 5px;
+    left: 10px;
+    padding: 10px 20px;
+    position: fixed;
+    text-decoration: none;
+    transition: background-color 600ms, border-color 600ms;
+    z-index: 10000;
+  }
+  
+  .meta-link:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .meta-link > i, .meta-link > span {
+    height: 20px;
+    line-height: 20px;
+  }
+  
+  .meta-link > span {
+    color: white;
+    font-family: "Rubik", sans-serif;
+    transition: color 600ms;
+  }
+  
